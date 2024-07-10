@@ -9,7 +9,7 @@
                     <div class="form-group">
                         <input type="hidden" name="id_prop" value="<?php echo $dt->id_prop; ?>">
                         <label>Harga Sewa /hari</label>
-                        <input type="text" name="harga" class="form-control" value="<?php echo ($dt->harga) ?>" readonly>
+                        <input type="text" name="harga" class="form-control" value="Rp.<?php echo number_format($dt->harga, 0, ',', '.'); ?>" readonly>
                     </div>
 
                     <div class="form-group">
@@ -22,10 +22,8 @@
                         <input type="date" name="tanggal_keluar" class="form-control">
                     </div>
 
-                    <button type="submit" class="btn btn-warning">Sewa</button>
-
-                </form>
-            
+                    <button type="submit" class="btn btn-primary">Sewa</button>
+                </form>  
             <?php endforeach; ?>
         </div>
 

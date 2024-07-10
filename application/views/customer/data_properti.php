@@ -1,6 +1,8 @@
 <section class="ftco-section bg-light">
     	<div class="container">
-		<?php echo $this->session->flashdata('pesan') ?>
+			<?php if($this->session->flashdata('pesan')): ?>
+				<?php echo $this->session->flashdata('pesan'); ?>
+			<?php endif; ?>
     		<div class="row">
                 <?php foreach($property as $pr): ?>
     			<div class="col-md-4 ftco-animate">

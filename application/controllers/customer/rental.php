@@ -46,6 +46,4 @@ class Rental extends CI_Controller {
         redirect('customer/data_properti');
     }
 }
-
-
 ?>

@@ -54,8 +54,8 @@
                       <a href="#contact" class="nav-link">Contact</a>
                   </li>
                   <?php if($this->session->userdata('nama')) { ?>
-                      <li class="nav-item">
-                          <a href="<?php echo base_url('customer/dashboard')?>" class="nav-link"> Welcome <?php echo $this->session->userdata('nama') ?></a>
+                      <li class="nav-item users">
+                          <a href="<?php echo base_url('customer/dashboard')?>" class="nav-link"> Welcome <b><?php echo $this->session->userdata('nama') ?></b></a>
                       </li>
                       <li class="nav-item">
                           <a href="<?php echo base_url('auth/logout')?>"

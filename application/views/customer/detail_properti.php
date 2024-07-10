@@ -93,7 +93,7 @@
         <div class="col-md-12">
                 <div class="card bg-transparent border-0">
                     <div class="card-body text-center">
-                        <a class="btn btn-sm btn-danger" href="<?php echo base_url('customer/data_properti') ?>">Kembali</a>
+                        <a class="btn btn-sm btn-danger mt-3" href="<?php echo base_url('customer/data_properti') ?>">Kembali</a>
                     </div>
                 </div>
             </div>

@@ -3,8 +3,9 @@
         <div class="card-header">
             Data Transaksi Anda
         </div>
-
-        <span class="p-2"><?php echo $this->session->flashdata('pesan') ?></span>
+        <?php if($this->session->flashdata('pesan')): ?>
+            <?php echo $this->session->flashdata('pesan'); ?>
+        <?php endif; ?>
         <div class="card-body">
             <table class="table table-stripped table-responsive table-bordered">
                 <tr>

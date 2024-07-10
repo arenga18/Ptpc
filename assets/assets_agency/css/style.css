@@ -6,7 +6,7 @@
  */
 :root {
 	--primary: #b88e2f;
-	--second: #f5f5dc;
+	--second: #c7c7c7;
 	--third: #fff3e3;
 	--blue: #007bff;
 	--indigo: #6610f2;
@@ -3566,9 +3566,8 @@ fieldset:disabled a.btn {
 
 .btn-sm,
 .btn-group-sm > .btn {
-	padding: 0.25rem 0.5rem;
+	padding: 0.5rem 0.8rem;
 	font-size: 0.875rem;
-	line-height: 1.5;
 	border-radius: 0.2rem;
 }
 
@@ -5130,6 +5129,7 @@ input[type="button"].btn-block {
 }
 
 .card-body {
+	padding: 1.5rem 2rem;
 	-webkit-box-flex: 1;
 	-ms-flex: 1 1 auto;
 	flex: 1 1 auto;
@@ -5561,8 +5561,9 @@ input[type="button"].btn-block {
 }
 
 .badge-primary {
-	color: #212529;
-	background-color: #b88e2f;
+	padding: 5px 8px;
+	color: #fff;
+	background-color: green;
 }
 
 .badge-primary[href]:hover,
@@ -10615,15 +10616,23 @@ h5,
 @media (max-width: 991.98px) {
 	.ftco-navbar-light .navbar-nav {
 		padding-bottom: 10px;
+		gap: 15px;
 	}
 }
 
 .navbar-nav > .nav-item > .nav-link {
 	font-size: 13px;
-	margin: 0 10px;
 	color: rgba(255, 255, 255, 0.75) !important;
 	font-weight: 400;
 	opacity: 1 !important;
+}
+
+.navbar-nav > .nav-item {
+	margin: 0 10px;
+}
+
+.navbar-nav > .nav-item:hover {
+	color: white !important;
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
@@ -10676,6 +10685,10 @@ h5,
 	}
 }
 
+.ftco-navbar-light .navbar-nav > .nav-item.cta-colored > .nav-link {
+	color: #fff !important;
+}
+
 .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
 	color: #b88e2f !important;
 	background: #fff;
@@ -10699,7 +10712,7 @@ h5,
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored > a {
-	background: #ff8f56 !important;
+	background: #f05d23 !important;
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item.active > a {
@@ -10775,8 +10788,8 @@ h5,
 }
 
 .ftco-navbar-light.scrolled .nav-link {
-	padding-top: 0.9rem !important;
-	padding-bottom: 0.9rem !important;
+	/* padding-top: 0.9rem !important;
+	padding-bottom: 0.9rem !important; */
 	color: #000000 !important;
 }
 
@@ -11169,10 +11182,6 @@ h5,
 
 .btn {
 	cursor: pointer;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	-ms-border-radius: 30px;
-	border-radius: 30px;
 	-webkit-box-shadow: none !important;
 	box-shadow: none !important;
 }
@@ -13627,4 +13636,34 @@ textarea.form-control {
 
 .navbar .navbar-brand {
 	filter: invert(100%) brightness(200%);
+}
+
+.container .navbar-nav .users {
+	background: white;
+	border-radius: 8px;
+	margin-right: 0;
+}
+
+.container .navbar-nav .users .nav-link {
+	color: #b88e2f !important;
+	padding: 8px 15px;
+}
+
+.ftco-navbar-light.scrolled .users .nav-link {
+	color: black !important;
+}
+
+.ftco-navbar-light.scrolled .users {
+	border: 1px solid #b88e2f;
+	background: linear-gradient(to bottom, white, lightgray);
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.invoice-container {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 5px;
 }
